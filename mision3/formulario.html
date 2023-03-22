@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="grid justify-items-center ">
+ <h1 class="mt-6 font-bold text-xl">Registro de personas</h1>    
+<div class="mt-16 w-[50rem] h-[50rem]  ">
+
+    <div class="flex flex-col">
+
+        <div class="flex flex-row justify-between mx-4">
+            <div class="flex flex-col text-lg">
+                <label for="" >Nombre</label>
+                <input id="nombre" type="text" class="h-16 rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+            </div>
+    
+            <div class="flex flex-col text-lg">
+                <label for="">Apellido</label>
+                <input id="apellido" type="text" class="h-16 rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between mt-16 mx-4">
+            <div class="flex flex-col text-lg">
+                <label for="">Area</label>
+                <select id="area" name="genero" class="h-16 w-[15rem]     rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB]  ">
+
+                    <option>Docencia</option>
+              
+                    <option>Tecnologia</option>
+                    <option>Marketing</option>
+              
+                  </select>
+
+            </div>
+    
+            <div class="flex flex-col text-lg">
+                <label for="">Usuario</label>
+                <input id="usuario" type="text" class="h-16 w-[15rem] rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+            </div>
+                
+            <div class="flex flex-col text-lg">
+                <label for="">Edad</label>
+                <input id="edad" type="text" class="h-16 w-[15rem] rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+            </div>
+
+        </div>
+        <div class="mx-4 mt-16">
+            <label for="">Direccion</label>
+            <input id="direccion" type="text" class="h-16 w-full rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+        </div>
+        <div class="mx-4 mt-16">
+            <label for="">Email</label>
+            <input id="email" type="text" class="h-16 w-full rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+        </div>
+
+        <div class="grid justify-items-center">
+            <button id="boton" class=" flex   h-16 w-[10rem] bg-[#CC2233] rounded-full mt-16 mx-4 flex justify-center items-center">ENVIAR</button>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+<script src="formulario.js"></script>
+</body>
+</html>
