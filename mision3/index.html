@@ -9,7 +9,7 @@
 </head>
 <body  >
 
-    <div class="flex flex-row w-[85rem] ">
+    <div class="flex flex-row w-full ">
     <div class="w-36 h-screen bg-[#C9231B]">
 
     </div>
@@ -27,7 +27,7 @@
                 <h1>Usuarios</h1>
                </div>
             <div class=" ">
-             <button class=" rounded-full w-40 h-16 bg-[#CC2233] text-white" id="button"> Crear Usuario</button>
+             <button class=" relative left-[35rem] rounded-full w-40 h-16 bg-[#CC2233] text-white" id="button"> Crear Usuario</button>
             </div>
 
          
@@ -39,14 +39,14 @@
 </div>
 
 <div class="flex flex-row items-center ml-8">
- <div class="m-2">
+ <div class="m-2 text-2xl">
      <p>Buscar usuario</p>
  </div>
   <div  class="m-2">
-     <img src="img/Rectangle 17.png" alt="">
+    <label class="border mt-[15px] font-bold ml-1 flex justify-center border-black w-[22px] h-[22px] rounded-[15px] items-start" for="">?</label>
   </div>
   <div class="m-2">
-     <input type="text" class="h-12 w-[30rem] rounded-lg border-2 border-black">
+     <input id="search" type="text" class="h-12 w-[30rem] rounded-lg border-2 border-black">
   </div>
  
 </div>
@@ -58,8 +58,8 @@
 </div>
 
 
-<div class="flex justify-center">
- <table class="w-full  gird justify-items-center">
+<div class="flex ">
+<table class="w-[80rem]  gird justify-items-center">
      <tr class="bg-[#F3F6FB]">
          <th>
              <div class="flex flex-row justify-center text-xl" >
@@ -94,8 +94,10 @@
          </th>
      </tr>
      
-     <tbody  id="docencia" >
+     <tbody   id="docencia" ></tbody> 
+     
 
+  
 
      </tbody>
 

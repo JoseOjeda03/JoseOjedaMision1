@@ -9,7 +9,7 @@
 </head>
 <body class="grid justify-items-center ">
   <div class="flex flex-row justify-center mr-16 items-center">
-    <img src="img/Union.png" id="img" class="w-5 h-5 " alt="">
+    <img src="img/Union.png" id="img" class="relative right-[30rem] w-5 h-5 " alt="">
     <h1 class="mt-6 font-bold text-xl">Registro de personas</h1>    
   </div>
 
@@ -32,14 +32,8 @@
         <div class="flex flex-row justify-between mt-8 mx-4">
             <div class="flex flex-col text-lg">
                 <label for="">Area</label>
-                <select required id="area" name="genero" class="h-16 w-[15rem]     rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB]  ">
+                <input required id="area" type="text" class="h-16 w-[15rem] rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
 
-                    <option>Docencia</option>
-              
-                    <option>Tecnologia</option>
-                    <option>Marketing</option>
-              
-                  </select>
 
             </div>
     
@@ -50,7 +44,7 @@
                 
             <div class="flex flex-col text-lg">
                 <label for="">Edad</label>
-                <input required id="edad" type="text" class="h-16 w-[15rem] rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
+                <input required id="edad" type="number" class="h-16 w-[15rem] rounded-lg border-2 border-[#ED00D5] bg-[#F3F6FB] ">
             </div>
 
         </div>
