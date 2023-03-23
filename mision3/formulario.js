@@ -1,6 +1,9 @@
 
-
+let i=0
+const img =document.querySelector("#img")
 boton.addEventListener('click',formularioevento)
+img.addEventListener('click',formularioevento)
+
 
 function formularioevento(){
     const nombre=document.getElementById('nombre').value;
@@ -11,18 +14,11 @@ const edad=document.querySelector('#edad').value;
 const direccion=document.querySelector('#direccion').value;
 const email=document.querySelector('#email').value; 
 
+let nombreCompleto=nombre+" "+apellido;
+let nuevoUsuario =[{"nombrecompleto":nombreCompleto,"apellido":apellido,"area":area,"usuario":usuario,"edad":edad,"direccion":direccion,"email":email}]
 
+localStorage.setItem(localStorage.length, JSON.stringify(nuevoUsuario));
 
-
-
-    let nombreCompleto=nombre +" "+ apellido;
-
-    localStorage.setItem('nombrecompleto', nombreCompleto );
-    localStorage.setItem('area', area);
-    localStorage.setItem('usuario', usuario);
-    localStorage.setItem('edad', edad );
-    localStorage.setItem('direccion', direccion );
-    localStorage.setItem('email', email );
     location.href="index.html"
 
 }

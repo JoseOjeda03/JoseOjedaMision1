@@ -1,49 +1,47 @@
 const boton = document.querySelector('#button')
 const docencia =document.querySelector('#docencia')
+
+const Tecnologia =document.querySelector('#Tecnologia')
+
 boton.addEventListener('click',ir)
 function ir(){
     location.href="formulario.html"
 }
+let contDocencia =0;
+let contTec =0;
+let contMark =0;
 
 
-let nombreCompleto = localStorage.getItem('nombrecompleto');
-let area = localStorage.getItem('area');
-let usuario = localStorage.getItem('usuario');
-let edad = localStorage.getItem('edad');
-let  direccion = localStorage.getItem('direccion');
-let  email = localStorage.getItem('email');
-let contDocencia=0;
 
 
-if(area === "Docencia" ){
-    contDocencia+=2
-    let html= `
+  
+  for (let j = 0; j < localStorage.length; j++) {
+    var z = JSON.parse(localStorage.getItem(j));
+
+        console.log("hola")
+        
+        let html= ` 
     
-    <td rowspan="${contDocencia}" >
-    <div  class="flex justify-center  text-lg" >
-        <p>Docencia</p>
-
-     </div>
+           
+            <tr>
+            <td class="text-center"> ${z[0]["area"]}</td>
+            <td class="text-center"> ${z[0]["nombrecompleto"]}</td>
+            <td class="text-center"> ${z[0]["usuario"]}</td>
+            <td class="text-center text-[#C9231B]"> ${z[0]["email"]}</td>
+            <td class="text-center"> ${z[0]["edad"]}</td>
+            </tr>
+          
+         
     
-    </td>
-    <tr>
-        <td> ${nombreCompleto}</td>
-        <td> ${usuario}</td>
-        <td> ${email}</td>
-        <td> ${direccion}</td>
+        
+        
+        
+        `
+        docencia.innerHTML+=html
 
-      </tr>
-      
-     
 
-    
-    
-    
-    `
-
-    docencia.innerHTML+=html
+    }
 
 
 
 
-}
