@@ -72,6 +72,9 @@ function getBuscarrr(searching){
 
 function mostrar(){
     for (let j = 0; j < localStorage.length; j++) {
+
+
+       
         var z = JSON.parse(localStorage.getItem(j));
     
             console.log("hola")
